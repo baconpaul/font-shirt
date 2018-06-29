@@ -15,7 +15,6 @@ def drawltr(dwg, ltr, x0, y0):
     for l in ltr:
         xi = 1
         for c in l:
-            # set presentation attributes at object creation as SVG-Attributes
             circle = dwg.circle(center=((xi * 5 + x0) * mm, (yi * 5 + y0) * mm), r='2.5mm')
             if c == '#':
                 circle.fill('red').stroke('black', width=1)
